@@ -1,0 +1,58 @@
+mjml
+    //- Head
+    mj-head
+        mj-title Ieseg - Template mailing events 2
+        mj-raw.
+            <meta charset="UTF-8">
+            <meta name='color-scheme' content='light'/>
+            <meta name='supported-color-schemes' content='light'/>
+            <meta name="format-detection" content="telephone=no"/>
+            <meta name="format-detection" content="date=no"/>
+            <meta name="format-detection" content="address=no"/>
+            <meta name="format-detection" content="email=no"/>
+        mj-attributes
+            mj-all(font-family='Arial, Helvetica, sans serif')/
+            mj-class(name='T24-900' font-family='Arial, Helvetica, sans-serif' font-style="normal" font-size='24px' line-height='15px' font-weight='900')/
+            mj-class(name='T13-700' font-family='Arial, Helvetica, sans-serif' font-style="normal" font-size='13.5px' line-height='15px' font-weight='700')/
+            mj-class(name='T12-400' font-family='Arial, Helvetica, sans-serif' font-style="normal" font-size='12px' line-height='15px' font-weight='400')/
+            mj-button(padding="0" inner-padding="10px 10px" width="163px" border-radius="20px" font-family='Arial, Helvetica, sans-serif' font-style="normal" font-size='16px' line-height='20px' font-weight='700' text-transform="uppercase")
+            //- Black colors text
+            mj-class(name="cTT" color="#A1A1A1")/
+            mj-class(name="cTW" color="#ffffff")/
+            mj-class(name="bgT3" background-color="#3A3D42")/
+            mj-class(name="bgT2" background-color="#44484F")/
+            mj-class(name="bgT1" background-color="#E5E5E5")
+            mj-class(name="cT0" color="#000000")/
+            mj-class(name="bg0" background-color="#000000")/
+            mj-class(name="bgW" background-color="#ffffff")/
+            //- Colors blue
+            mj-class(name="cTBc" color="#BFD2EF")/
+            mj-class(name="bgBc" background-color="#BFD2EF")/
+            mj-class(name="cTBm" color="#678AC2")/
+            mj-class(name="bgBm" background-color="#678AC2")/
+            mj-class(name="cTBf" color="#405981")/
+            mj-class(name="bgBf" background-color="#405981")/
+            //- Colors yellow
+            mj-class(name="cTYc" color="#FDEAB1")/
+            mj-class(name="bgTYc" background-color="#FDEAB1")/
+            mj-class(name="cTYm" color="#FAC064")/
+            mj-class(name="bgTYm" background-color="#FAC064")/
+            mj-class(name="cTYf" color="#F5B868")/
+            mj-class(name="bgTYf" background-color="#F5B868")/
+        mj-breakpoint(width="480px")
+    //- Body
+    mj-body(background-color='#D6D6D6' width="725px")
+        //- content
+        block content
+        //- bloc header
+        block header
+            include ../includes/_header
+        //- bloc conferences
+        block conferences
+            include ../includes/_conferences
+        //- bloc réunions
+        block reunions
+            include ../includes/_reunions
+        //- bloc footer
+        block footer
+            include ../includes/_footer
